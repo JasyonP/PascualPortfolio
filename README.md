@@ -34,5 +34,5 @@ If you want to contact me you can reach me at [Instagram](https://www.instagram.
 
 MIT
 
-##Credits
+## Credits
 [CodewithSade](https://github.com/codewithsadee/codewithsadee).
