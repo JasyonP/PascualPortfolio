@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JasyonP - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/Profile-Jay.jpg" style="border-radius: 20px;" alt="Jayson Pascual" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Richard hanrick">Jayson B. Pascual</h1>
+
+          <p class="title">Frontend developer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:jayson16yaszed@gmail.com" class="contact-link" onclick="window.location.href='mailto:jayson16yaszed@gmail.com'; return false;">jayson16yaszed@gmail.com</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+639630270807" class="contact-link" onclick="window.location.href='tel:+639630270807'; return false;">+63 9630270807</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1982-06-23">May 2004</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Zambales, Philippines</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://www.facebook.com/Pascual.Jasyon.2004" target="_blank" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+          <li class="social-item">
+            <a href="https://www.instagram.com/jasyon_p"  target="_blank" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            My name is Jayson B. Pascual, and I am a third-year student pursuing a Bachelor of Science in Information Technology
+             (BSIT). I have an immense passion in web development. 
+          </p>
+
+          <p>
+            Through freelance commissions on IT and computer science-related projects, 
+             I have gained practical experience and have entry-level skills
+             in front-end and back-end web technologies. I have a strong interest in learning, 
+             using technology to solve problems, and creating useful solutions. 
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What i'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg
+                " alt="design icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web design</h4>
+
+                <p class="service-item-text">
+                  Good-quality design made at a extry-level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="Web development icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web development</h4>
+
+                <p class="service-item-text">
+                  Good-quality development of sites at the entry-level.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Mobile apps</h4>
+
+                <p class="service-item-text">
+                  basic development of applications for Android.
+                </p>
+              </div>
+
+            </li>
+
+              <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icons8-ps-controller-50.png" alt="mobile app icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Game development</h4>
+
+                <p class="service-item-text">
+                  basic development of Game for Android and Desktop.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Photography</h4>
+
+                <p class="service-item-text">
+                  I make good-quality photos of any category at a entry-level.
+                </p>
+              </div>
+
+            </li>
+
+              <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icons8-video-50.png" alt="camera icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Videography</h4>
+
+                <p class="service-item-text">
+                  I make good-quality videos of any category at a entry-level.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Columban College Inc. - College of Computer Studies</h4>
+              <span>2022 — Present</span>
+
+              <p class="timeline-text">
+                Bachelor of Science in Information Technology
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Columban College Inc. Basic Ed Asinan Campus</h4>
+
+              <span>2020-2022</span>
+
+              <p class="timeline-text">
+               TVL - Information and Communication Technology ( ICT )
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Saint Nicholas Academy of Castillejos Zambales</h4>
+
+              <span>2016-2020</span>
+
+              <p class="timeline-text">
+                High School
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="briefcase-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Projects and Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Freelance</h4>
+
+              <span>2023 — Present</span>
+
+              <p class="timeline-text">
+                Freelance in Web Development, Game Development, And IT/CS related projects.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">SMS-Stock Monitoring System ( Project )</h4>
+
+              <span>May 2024</span>
+
+              <p class="timeline-text">
+                Developed a system to monitor medicine and medical supply inventory, track usage and expiry dates, 
+                and manage patient record logs. Key features included automated stock alerts, equipment tracking, and 
+                organized patient history management to improve clinic efficiency and resource allocation.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">HRMS - Human Resources Management System ( Project )</h4>
+
+              <span>February 2024</span>
+
+              <p class="timeline-text">
+                Implemented features allowing employees to securely submit their documents
+                and enabling staff members to access a ranking system to evaluate employee performance.
+
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">PIMSHSO - Patient and Inventory Management System for Health Services Office ( Project )</h4>
+
+              <span>December 2023</span>
+
+              <p class="timeline-text">
+                Developed a secure role-based system for managing healthcare operations within a school clinic. 
+                Key features included patient log-in/log-out, appointment booking, medical record management, 
+                and staff administrative tools. 
+
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Back-end Skills</h5>
+                <data value="50">50%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Front-end Skills</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Game Development</h5>
+                <data value="75">75%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 75%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Graphic Design</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Java</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Freelance</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Projects</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Freelance</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Projects</button>
+              </li>
+
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="freelance">
+              <a href="#" class="project-link" data-modal-trigger="modal-1">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/freelance-1.jpg" alt="crudbootstrap" loading="lazy">
+                </figure>
+                <h3 class="project-title">CRUD - Web Application</h3>
+                <p class="project-category">Freelance</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="projects">
+              <a href="#" class="project-link" data-modal-trigger="modal-2">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-4.jpg" alt="orizon" loading="lazy">
+                </figure>
+                <h3 class="project-title">SMS-Stock Monitoring System Login</h3>
+                <p class="project-category">Projects</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="projects">
+              <a href="#" class="project-link" data-modal-trigger="modal-3">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-1.jpg" alt="fundo" loading="lazy">
+                </figure>
+                <h3 class="project-title">HRMS - Human Resources Management System Dashboard</h3>
+                <p class="project-category">Projects</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="projects">
+              <a href="#" class="project-link" data-modal-trigger="modal-4">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-8.jpg" alt="PIMSHSO" loading="lazy">
+                </figure>
+                <h3 class="project-title">PIMSHSO - Patient and Inventory Management System for Health Services Office</h3>
+                <p class="project-category">Projects</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="projects">
+              <a href="#" class="project-link" data-modal-trigger="modal-5">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-1-java.jpg" alt="dsm." loading="lazy">
+                </figure>
+                <h3 class="project-title">Java Student Management System</h3>
+                <p class="project-category">Projects</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="projects">
+              <a href="#" class="project-link" data-modal-trigger="modal-6">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-2.jpg" alt="metaspark" loading="lazy">
+                </figure>
+                <h3 class="project-title">SMS - Stock Monitoring System Dashboard</h3>
+                <p class="project-category">Projects</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="projects">
+              <a href="#" class="project-link" data-modal-trigger="modal-7">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-5.jpg" alt="summary" loading="lazy">
+                </figure>
+                <h3 class="project-title">Gdevelop Game - Platformer</h3>
+                <p class="project-category">Projects</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="projects">
+              <a href="#" class="project-link" data-modal-trigger="modal-8">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-5.5.jpg" alt="task manager" loading="lazy">
+                </figure>
+                <h3 class="project-title">Gdevelop Game - Platformer</h3>
+                <p class="project-category">Projects</p>
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="projects">
+              <a href="#" class="project-link" data-modal-trigger="modal-9">
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+                  <img src="./assets/images/project-3.jpg" alt="arrival" loading="lazy">
+                </figure>
+                <h3 class="project-title">HRMS - Login</h3>
+                <p class="project-category">Projects</p>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#" class="blog-link" data-modal-trigger="blog-modal-1">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-1.jpg" alt="Design conferences in 2022" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">CTF</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">February 2025</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">CTF Challenge in 2025</h3>
+                  <p class="blog-text">
+                    I participated in a Capture The Flag (CTF) challenge in 2025.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#" class="blog-link" data-modal-trigger="blog-modal-2">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-2.jpg" alt="Best fonts every designer" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Photography</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">March 2024</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Road Trip</h3>
+                  <p class="blog-text">
+                    I went on a road trip to San Antonio Zambales.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#" class="blog-link" data-modal-trigger="blog-modal-3">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-3.jpg" alt="Design digest #80" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Image</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">2025</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Chill and Vibe Coding</h3>
+                  <p class="blog-text">
+                    I love to code and chill with my friends.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#" class="blog-link" data-modal-trigger="blog-modal-4">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-4.jpg" alt="UI interactions of the week" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">CTF</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">February 2024</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">CTF Challenge in 2024</h3>
+                  <p class="blog-text">
+                    I participated in a Capture The Flag (CTF) challenge in 2024.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#" class="blog-link" data-modal-trigger="blog-modal-5">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-5.jpg" alt="The forgotten art of spacing" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Tournament</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">March 2024</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Wildrift Tournament Champion</h3>
+                  <p class="blog-text">
+                    We won the Wildrift Tournament in 2024 during the department's event.
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#" class="blog-link" data-modal-trigger="blog-modal-6">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-6.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Photography</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">February 2024</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Batchmates</h3>
+                  <p class="blog-text">
+                    Block A Batchmates
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#" class="blog-link" data-modal-trigger="blog-modal-7">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-7.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Photography</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">February 2024</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Batchmates</h3>
+                  <p class="blog-text">
+                    chilling in the internet laboratory
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#" class="blog-link" data-modal-trigger="blog-modal-8">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-8.jpg" alt="Design digest #79" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Photography</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">2023</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Batchmates</h3>
+                  <p class="blog-text">
+                    1st year batchmates
+                  </p>
+                </div>
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#" class="blog-link" data-modal-trigger="blog-modal-9">
+                <figure class="blog-banner-box">
+                  <img src="./assets/images/blog-ni-aiah.png" alt="Design digest #79" loading="lazy">
+                </figure>
+                <div class="blog-content">
+                  <div class="blog-meta">
+                    <p class="blog-category">Image</p>
+                    <span class="dot"></span>
+                    <time datetime="2022-02-23">2024</time>
+                  </div>
+                  <h3 class="h3 blog-item-title">Bini Aiah</h3>
+                  <p class="blog-text">
+                    My Bias in Bini is Aiah known as Mariah Queen Arceta
+                  </p>
+                </div>
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3947776.147817198!2d118.97560907067042!3d14.92315071355
+              9021!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1
+              !3m3!1m2!1s0x339426ea3ea3fa11%3A0xa5fb501f93d0f77a!2sZambales!5e0!3m2!1sen!2sph!4v1747651527209!5m2!1sen!2sph"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+            <div class="form-status"></div>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+  <!-- Modal Structures -->
+  <div class="modal" id="modal-1">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img src="" alt="" class="modal-image">
+      <h3 class="modal-title"></h3>
+      <p class="modal-description"></p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-2">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img src="" alt="" class="modal-image">
+      <h3 class="modal-title"></h3>
+      <p class="modal-description"></p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-3">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img src="" alt="" class="modal-image">
+      <h3 class="modal-title"></h3>
+      <p class="modal-description"></p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-4">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img src="" alt="" class="modal-image">
+      <h3 class="modal-title"></h3>
+      <p class="modal-description"></p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-5">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img src="" alt="" class="modal-image">
+      <h3 class="modal-title"></h3>
+      <p class="modal-description"></p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-6">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img src="" alt="" class="modal-image">
+      <h3 class="modal-title"></h3>
+      <p class="modal-description"></p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-7">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img src="" alt="" class="modal-image">
+      <h3 class="modal-title"></h3>
+      <p class="modal-description"></p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-8">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img src="" alt="" class="modal-image">
+      <h3 class="modal-title"></h3>
+      <p class="modal-description"></p>
+    </div>
+  </div>
+
+  <div class="modal" id="modal-9">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img src="" alt="" class="modal-image">
+      <h3 class="modal-title"></h3>
+      <p class="modal-description"></p>
+    </div>
+  </div>
+
+  <div class="modal" id="blog-modal-1">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img src="" alt="" class="modal-image">
+      <h3 class="modal-title"></h3>
+      <p class="modal-description"></p>
+    </div>
+  </div>
+
+  <div class="modal" id="blog-modal-2">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img src="" alt="" class="modal-image">
+      <h3 class="modal-title"></h3>
+      <p class="modal-description"></p>
+    </div>
+  </div>
+
+  <div class="modal" id="blog-modal-3">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img src="" alt="" class="modal-image">
+      <h3 class="modal-title"></h3>
+      <p class="modal-description"></p>
+    </div>
+  </div>
+
+  <div class="modal" id="blog-modal-4">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img src="" alt="" class="modal-image">
+      <h3 class="modal-title"></h3>
+      <p class="modal-description"></p>
+    </div>
+  </div>
+
+  <div class="modal" id="blog-modal-5">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img src="" alt="" class="modal-image">
+      <h3 class="modal-title"></h3>
+      <p class="modal-description"></p>
+    </div>
+  </div>
+
+  <div class="modal" id="blog-modal-6">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img src="" alt="" class="modal-image">
+      <h3 class="modal-title"></h3>
+      <p class="modal-description"></p>
+    </div>
+  </div>
+
+  <div class="modal" id="blog-modal-7">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img src="" alt="" class="modal-image">
+      <h3 class="modal-title"></h3>
+      <p class="modal-description"></p>
+    </div>
+  </div>
+
+  <div class="modal" id="blog-modal-8">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img src="" alt="" class="modal-image">
+      <h3 class="modal-title"></h3>
+      <p class="modal-description"></p>
+    </div>
+  </div>
+
+  <div class="modal" id="blog-modal-9">
+    <div class="modal-content">
+      <span class="close-modal">&times;</span>
+      <img src="" alt="" class="modal-image">
+      <h3 class="modal-title"></h3>
+      <p class="modal-description"></p>
+    </div>
+  </div>
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+  <!-- EmailJS -->
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function() {
+      emailjs.init("YOUR_PUBLIC_KEY"); // Replace with your EmailJS public key
+    })();
+  </script>
+
+</body>
+
+</html>
