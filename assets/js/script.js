@@ -203,13 +203,63 @@ document.addEventListener('DOMContentLoaded', function() {
     if (modal) {
       modal.style.display = 'block';
       document.body.style.overflow = 'hidden'; // Prevent scrolling when modal is open
+      
+      // Add touch event listeners for mobile
+      modal.addEventListener('touchstart', handleTouchStart, false);
+      modal.addEventListener('touchmove', handleTouchMove, false);
+      
+      // Center modal on mobile
+      if (window.innerWidth <= 768) {
+        modal.style.top = '50%';
+        modal.style.transform = 'translateY(-50%)';
+      }
     }
   }
 
   // Function to close modal
   function closeModal(modal) {
-    modal.style.display = 'none';
-    document.body.style.overflow = 'auto'; // Re-enable scrolling
+    if (modal) {
+      modal.style.display = 'none';
+      document.body.style.overflow = 'auto'; // Re-enable scrolling
+      
+      // Remove touch event listeners
+      modal.removeEventListener('touchstart', handleTouchStart);
+      modal.removeEventListener('touchmove', handleTouchMove);
+    }
+  }
+
+  // Touch event variables
+  let xDown = null;
+  let yDown = null;
+
+  function handleTouchStart(evt) {
+    const firstTouch = evt.touches[0];
+    xDown = firstTouch.clientX;
+    yDown = firstTouch.clientY;
+  }
+
+  function handleTouchMove(evt) {
+    if (!xDown || !yDown) {
+      return;
+    }
+
+    const xUp = evt.touches[0].clientX;
+    const yUp = evt.touches[0].clientY;
+
+    const xDiff = xDown - xUp;
+    const yDiff = yDown - yUp;
+
+    // If swipe is more horizontal than vertical
+    if (Math.abs(xDiff) > Math.abs(yDiff)) {
+      if (xDiff > 0) {
+        // Swipe left - close modal
+        closeModal(evt.currentTarget);
+      }
+    }
+
+    // Reset values
+    xDown = null;
+    yDown = null;
   }
 
   // Add click event listeners to all modal triggers
@@ -256,7 +306,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
-  // Close modal when pressing Escape key
+  // Close modal on escape key
   window.addEventListener('keydown', function(e) {
     if (e.key === 'Escape') {
       modals.forEach(modal => {
